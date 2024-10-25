@@ -1,6 +1,7 @@
 package cinematica;
 
-import cinematica.movimentohorizontal.SubMenu;
+import cinematica.movimentohorizontal.MovimientoHorizontal;
+import cinematica.movimentovertical.MovimientoVertical;
 
 import java.util.Scanner;
 
@@ -19,10 +20,10 @@ public class Cinematica {
             opcion = abi.nextInt();
             switch (opcion) {
                 case 1:
-                    SubMenu.mostrarMenu(abi);
+                    MovimientoHorizontal.mostrarMenu(abi);
                     break;
                 case 2:
-                    //caidaLibre(abi);
+                    MovimientoVertical.mostrarMenu(abi);
                     break;
                 case 3:
                     //proyeccionHorizontal(abi);

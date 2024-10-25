@@ -1,15 +1,18 @@
-package cinematica.movimentohorizontal;
+package cinematica.movimentovertical;
+import cinematica.movimentohorizontal.*;
 
 import java.util.Scanner;
 
-public class SubMenu {
+public class MovimientoVertical {
     public static void mostrarMenu(Scanner abi) {
         int opcion;
         do {
-            System.out.println("**** MOVIMIENTO CON ACELERACION CONSTANTE ****");
+            System.out.println("**** MOVIMIENTO VERTICAL (CAIDA LIBRE) ****");
+            System.out.println("(v0)Positivo: Lanzamiento hacia arriba \n" +
+                            "(v0)Negativo: Lanzamiento hacia abajo.");
             System.out.println("1. Posicion en un momento dado");
             System.out.println("2. Velocidad en un momento dado");
-            System.out.println("3. Tiempo necesario para alcanzar una posición determinada");
+            System.out.println("3. Tiempo necesario para alcanzar una posicion determinada");
             System.out.println("4. Aceleracion");
             System.out.println("5. Velocidad final");
             System.out.println("6. Tiempo Velocidad final");
