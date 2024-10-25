@@ -1,3 +1,5 @@
+package distancia;
+
 import java.util.Scanner;
 
 public class Distancia {
