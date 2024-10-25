@@ -3,7 +3,6 @@ package vectores.sumaVectores;
 import vectores.cuadrantes.CuadrantesYAngulos;
 
 import java.util.Scanner;
-import static vectores.cuadrantes.CuadrantesYAngulos.calcular;
 
 public class SumaVectores {
     public static void sumarVectores(Scanner abi) {
