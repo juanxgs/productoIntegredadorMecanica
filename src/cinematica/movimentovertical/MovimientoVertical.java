@@ -1,5 +1,4 @@
 package cinematica.movimentovertical;
-import cinematica.movimentohorizontal.*;
 
 import java.util.Scanner;
 
