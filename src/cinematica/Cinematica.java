@@ -1,5 +1,7 @@
 package cinematica;
 
+import cinematica.movimentohorizontal.SubMenu;
+
 import java.util.Scanner;
 
 public class Cinematica {
@@ -17,7 +19,7 @@ public class Cinematica {
             opcion = abi.nextInt();
             switch (opcion) {
                 case 1:
-                    //movimientoHorizontalA(abi);
+                    SubMenu.mostrarMenu(abi);
                     break;
                 case 2:
                     //caidaLibre(abi);
