@@ -1,6 +1,7 @@
 package cinematica;
 
 import cinematica.movimentohorizontal.MovimientoHorizontal;
+import cinematica.movimentoproyecciongeneral.MovimientoProyeccionGeneral;
 import cinematica.movimentoproyeccionhorizontal.MovimientoProyeccionHorizontal;
 import cinematica.movimentovertical.MovimientoVertical;
 
@@ -30,7 +31,7 @@ public class Cinematica {
                     MovimientoProyeccionHorizontal.mostarMenu(abi);
                     break;
                 case 4:
-                    //proyeccionGeneral(abi);
+                    MovimientoProyeccionGeneral.mostrarMenu(abi);
                     break;
             }
         } while (opcion != 0);
