@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class SubmenuCoordenadas {
 
     public static void mostrarMenu(Scanner abi){
-        int opcion = 0;
+        int opcion;
         do {
             System.out.println("**** VECTORES ****");
             System.out.println("1. De Coordenadas polares a rectangulares");

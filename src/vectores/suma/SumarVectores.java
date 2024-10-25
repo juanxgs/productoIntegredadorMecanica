@@ -1,11 +1,11 @@
-package vectores.sumaVectores;
+package vectores.suma;
 
 import vectores.cuadrantes.CuadrantesYAngulos;
 
 import java.util.Scanner;
 
-public class SumaVectores {
-    public static void sumarVectores(Scanner abi) {
+public class SumarVectores {
+    public static void sumar(Scanner abi) {
         int numVectores; // numero de vectores a sumar
         double sumComponenteX = 0, sumComponenteY = 0, angulo = 0;
         do {

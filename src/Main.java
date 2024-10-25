@@ -1,6 +1,7 @@
 import distancia.Distancia;
 import vectores.coordenadas.SubmenuCoordenadas;
-import vectores.sumaVectores.SumaVectores;
+import vectores.suma.SumarVectores;
+import cinematica.Cinematica;
 
 import java.util.Scanner;
 
@@ -20,10 +21,10 @@ public class Main {
                     SubmenuCoordenadas.mostrarMenu(abi);
                     break;
                 case 3:
-                    SumaVectores.sumarVectores(abi);
+                    SumarVectores.sumar(abi);
                     break;
                 case 4:
-                    //Cinematica.cinematicaMenu(abi);
+                    Cinematica.mostrarMenu(abi);
                     break;
                 case 5:
                     System.out.println("Saliendo...");
