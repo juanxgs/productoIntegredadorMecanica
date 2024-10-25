@@ -1,6 +1,7 @@
 package cinematica;
 
 import cinematica.movimentohorizontal.MovimientoHorizontal;
+import cinematica.movimentoproyeccionhorizontal.MovimientoProyeccionHorizontal;
 import cinematica.movimentovertical.MovimientoVertical;
 
 import java.util.Scanner;
@@ -26,7 +27,7 @@ public class Cinematica {
                     MovimientoVertical.mostrarMenu(abi);
                     break;
                 case 3:
-                    //proyeccionHorizontal(abi);
+                    MovimientoProyeccionHorizontal.mostarMenu(abi);
                     break;
                 case 4:
                     //proyeccionGeneral(abi);
