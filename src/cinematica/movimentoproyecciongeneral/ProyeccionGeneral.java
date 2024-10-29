@@ -29,10 +29,19 @@ public class ProyeccionGeneral {
         // Altura máxima
         double H = (v0y * v0y) / (2 * g);
 
+        // Velocidad de impacto y direccion
+        double vY = v0 * Math.sin(thetaRad) - g * tVuelo;
+        double magnitud = Math.sqrt(v0x * v0x + vY * vY);
+        double ang = vY/v0x;
+        double reslt = Math.toDegrees(Math.atan(ang));
+
         // Mostrar resultados
         System.out.printf("Tiempo de vuelo: %.2f s%n", tVuelo);
         System.out.printf("Alcance horizontal: %.2f m%n", R);
         System.out.printf("Altura máxima: %.2f m%n", H);
+        System.out.printf("Velocidad de impacto: %.2f m/s%n", magnitud);
+        System.out.printf("Angulo de impacto: %.2f grados%n", reslt);
+
 
         // Posiciones en el tiempo
         System.out.println("\nPosiciones en diferentes instantes:");

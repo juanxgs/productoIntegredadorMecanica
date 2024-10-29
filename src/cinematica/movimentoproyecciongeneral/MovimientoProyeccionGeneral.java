@@ -9,7 +9,7 @@ public class MovimientoProyeccionGeneral {
         int opcion;
         do {
             System.out.println("**** MOVIMIENTO PROYECCION GENERAL ****");
-            System.out.println("1. Componentes, Tiempo de Vuelo, Alcance Horizontal, Altura Maxima");
+            System.out.println("1. Tiempo de Vuelo, Alcance Horizontal, Altura Maxima");
             System.out.println("0. Regresar al menu principal");
             System.out.print("Elige una opcion: ");
             opcion = abi.nextInt();

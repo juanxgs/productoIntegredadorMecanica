@@ -7,15 +7,18 @@ public class MovimientoProyeccionHorizontal {
         int opcion;
         do {
             System.out.println("**** Movimiento Proyeccion Horizontal ****");
-            System.out.println("1. Tiempo de Vuelo y Distancia");
+            System.out.println("1. Velocidad y angulo");
+            System.out.println("2. Tiempo de vuelo y distancia");
             System.out.println("0. Salir");
             System.out.print("Elige una opcion: ");
             opcion = abi.nextInt();
 
             switch (opcion) {
                 case 1:
-                    TiempoVuelo.calcular(abi);
+                    Velocidad.calcular(abi);
                     break;
+                case 2:
+                    TiempoVuelo.calcular(abi);
                 case 0:
                     System.out.println("Saliendo del programa...");
                     break;
