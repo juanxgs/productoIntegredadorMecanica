@@ -1,5 +1,5 @@
 package vectores.coordenadas.rectangulares;
-import vectores.cuadrantes.CuadrantesYAngulos;
+import vectores.cuadrantes.AnguloCompleto;
 
 import java.util.Scanner;
 
@@ -10,9 +10,10 @@ public class RectangularesAPolares {
         double x = abi.nextDouble(); // X
         double y = abi.nextDouble(); // Y
         double magnitud = Math.sqrt(x * x + y * y);
-        double angulo = CuadrantesYAngulos.calcular(x, y);
+        double angulo = AnguloCompleto.calcularAngulo(x, y);
         System.out.println("Magnitud: " + magnitud);
         System.out.println("Angulo: " + angulo + "\n");
+        AnguloCompleto.calcularCuadrante(x, y);
 
     }
 }

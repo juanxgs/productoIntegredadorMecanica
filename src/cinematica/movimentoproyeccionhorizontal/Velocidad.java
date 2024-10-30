@@ -1,5 +1,6 @@
 package cinematica.movimentoproyeccionhorizontal;
-import vectores.cuadrantes.CuadrantesYAngulos;
+import vectores.cuadrantes.AnguloCompleto;
+
 import java.util.Scanner;
 
 public class Velocidad {
@@ -18,10 +19,9 @@ public class Velocidad {
         // Calculo
         double vx = Math.sqrt(2 * g * y0);
         double vr = Math.sqrt(v0 * v0 + vx * vx);
-        double angulo = vx/v0;
-        double result = Math.toDegrees(Math.atan(angulo));
+        double angulo = AnguloCompleto.calcularAngulo(v0, vx);
 
         System.out.printf("La velocidad con que golpea el piso: %.2f m/s%n", vr);
-        System.out.printf("Angulo de golpeo: %.2f grados%n", result);
+        System.out.printf("Angulo de golpeo: %.2f grados%n", angulo);
     }
 }

@@ -1,6 +1,6 @@
 package vectores.suma;
 
-import vectores.cuadrantes.CuadrantesYAngulos;
+import vectores.cuadrantes.AnguloCompleto;
 
 import java.util.Scanner;
 
@@ -10,9 +10,7 @@ public class SumarVectores {
         double sumComponenteX = 0, sumComponenteY = 0, angulo = 0;
         do {
             System.out.println("**** SUMA DE VECTORES ****");
-            System.out.print("""
-                    Ingrese el numero de vectores a sumar
-                    (Maximo 5): """);
+            System.out.print("Ingrese el numero de vectores a sumar (Maximo 5): ");
             numVectores = abi.nextInt();              // Limitado a 5
         } while (numVectores < 2 || numVectores > 5); // Podrian ser mas.
 
@@ -44,7 +42,8 @@ public class SumarVectores {
         double magnitud = Math.sqrt(sumComponenteX * sumComponenteX
                 + sumComponenteY * sumComponenteY);
         if (magnitud > 1e-10) {
-            angulo = CuadrantesYAngulos.calcular(sumComponenteX, sumComponenteY);
+            angulo = AnguloCompleto.calcularAngulo(sumComponenteX, sumComponenteY);
+            AnguloCompleto.calcularCuadrante(sumComponenteX, sumComponenteY);
         }
         System.out.println("Magnitud: " + magnitud);
         System.out.println("Angulo: " + angulo + "\n");

@@ -1,4 +1,6 @@
 package cinematica.movimentoproyecciongeneral;
+import vectores.cuadrantes.AnguloCompleto;
+
 import java.util.Scanner;
 
 public class ProyeccionGeneral {
@@ -32,15 +34,16 @@ public class ProyeccionGeneral {
         // Velocidad de impacto y direccion
         double vY = v0 * Math.sin(thetaRad) - g * tVuelo;
         double magnitud = Math.sqrt(v0x * v0x + vY * vY);
-        double ang = vY/v0x;
-        double reslt = Math.toDegrees(Math.atan(ang));
+        //double ang = vY/v0x;
+        //double reslt = Math.toDegrees(Math.atan(ang));
+        double angulo = AnguloCompleto.calcularAngulo(v0x, vY);
 
         // Mostrar resultados
         System.out.printf("Tiempo de vuelo: %.2f s%n", tVuelo);
         System.out.printf("Alcance horizontal: %.2f m%n", R);
         System.out.printf("Altura máxima: %.2f m%n", H);
         System.out.printf("Velocidad de impacto: %.2f m/s%n", magnitud);
-        System.out.printf("Angulo de impacto: %.2f grados%n", reslt);
+        System.out.printf("Angulo de impacto: %.2f grados%n", angulo);
 
 
         // Posiciones en el tiempo
