@@ -6,6 +6,7 @@ public class TerceraLey {
     public static void mostrarMenu(){
         Scanner krla = new Scanner(System.in);
         // DATOS
+        System.out.println("Equilibrio sin friccion");
         System.out.println("Ingrese el primer angulo (grados): ");
         double angulo1 =  krla.nextDouble();
         System.out.println("Ingrese el segundo angulo (grados): ");
