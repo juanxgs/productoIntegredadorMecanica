@@ -1,3 +1,4 @@
+import dinamica.Dinamica;
 import distancia.Distancia;
 import vectores.coordenadas.SubmenuCoordenadas;
 import vectores.suma.SumarVectores;
@@ -27,12 +28,14 @@ public class Main {
                     Cinematica.mostrarMenu(abi);
                     break;
                 case 5:
+                    Dinamica.mostrarMenu(abi);
+                case 6:
                     System.out.println("Saliendo...");
                     break;
                 default:
                     System.out.println("Opcion no valida. Intente de nuevo.");
             }
-        } while (opcion != 5);
+        } while (opcion != 6);
     }
 
 }

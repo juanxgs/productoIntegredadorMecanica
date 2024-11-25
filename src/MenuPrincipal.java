@@ -8,7 +8,8 @@ public class MenuPrincipal {
         System.out.println("2. VECTORES");
         System.out.println("3. SUMA DE VECTORES");
         System.out.println("4. CINEMATICA");
-        System.out.println("5. SALIR");
+        System.out.println("5. DINAMICA");
+        System.out.println("6. SALIR");
         System.out.print("INGRESE EL NUMERO PARA PROCEDER: ");
     }
 

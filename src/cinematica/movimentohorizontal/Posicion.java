@@ -4,24 +4,21 @@ import java.util.Scanner;
 public class Posicion {
     public static void calcular(Scanner abi){
 
-        // Entradas
-        System.out.print("Ingrese la posición inicial (x0) en metros: ");
+        // Solicitar datos al usuario
+        System.out.print("Ingrese la posición inicial (m): ");
         double x0 = abi.nextDouble();
-
-        System.out.print("Ingrese la velocidad inicial (v0) en m/s: ");
+        System.out.print("Ingrese la velocidad inicial (m/s): ");
         double v0 = abi.nextDouble();
-
-        System.out.print("Ingrese la aceleración (a) en m/s²: ");
+        System.out.print("Ingrese la aceleración (m/s^2): ");
         double a = abi.nextDouble();
-
-        System.out.print("Ingrese el tiempo (t) en segundos: ");
+        System.out.print("Ingrese el tiempo (s): ");
         double t = abi.nextDouble();
 
-        // Cálculo de la posición
-        double xt = x0 + v0 * t + 0.5 * a * t * t;
+        // Calcular la posición final
+        double x = x0 + v0 * t + 0.5 * a * t * t;
 
-        // Resultados
-        System.out.printf("La posición en t = %.2f segundos es: %.2f metros%n", t, xt);
+        // Mostrar el resultado
+        System.out.println("La posición final es: " + x + " m");
 
     }
 }
