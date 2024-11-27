@@ -1,16 +1,15 @@
 package vectores.suma;
 
 import vectores.cuadrantes.AnguloCompleto;
-
 import java.util.Scanner;
 
 public class SumarVectores {
     public static void sumar(Scanner abi) {
-        int numVectores; // numero de vectores a sumar
+        int numVectores; // Vectores A Sumar
         double sumComponenteX = 0, sumComponenteY = 0, angulo = 0;
         do {
             System.out.println("**** SUMA DE VECTORES ****");
-            System.out.print("Ingrese el numero de vectores a sumar (Maximo 5): ");
+            System.out.print("Ingrese el numero de vectores a sumar (De 2 a 5): ");
             numVectores = abi.nextInt();              // Limitado a 5
         } while (numVectores < 2 || numVectores > 5); // Podrian ser mas.
 
@@ -24,12 +23,15 @@ public class SumarVectores {
 
             // Calculo de las componentes
             double angulosRadianes = Math.toRadians(cantidadVectores[i][1]);
-            cantidadVectores[i][0] = cantidadVectores[i][0] * Math.cos(angulosRadianes);
-            cantidadVectores[i][1] = cantidadVectores[i][0] * Math.sin(angulosRadianes);
+            double componenteX = cantidadVectores[i][0] * Math.cos(angulosRadianes);
+            double componenteY = cantidadVectores[i][0] * Math.sin(angulosRadianes);
 
-            // Sumar Componentes
-            sumComponenteX += cantidadVectores[i][0];
-            sumComponenteY += cantidadVectores[i][1];
+            cantidadVectores[i][0] = componenteX;  // Guardar componente X
+            cantidadVectores[i][1] = componenteY;  // Guardar componente Y
+
+            sumComponenteX += componenteX;
+            sumComponenteY += componenteY;
+
         }
 
         // Resultante
@@ -45,6 +47,8 @@ public class SumarVectores {
             angulo = AnguloCompleto.calcularAngulo(sumComponenteX, sumComponenteY);
             AnguloCompleto.calcularCuadrante(sumComponenteX, sumComponenteY);
         }
+
+        // RESULTADOS
         System.out.println("Magnitud: " + magnitud);
         System.out.println("Angulo: " + angulo + "\n");
     }
