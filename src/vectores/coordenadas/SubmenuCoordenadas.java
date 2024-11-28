@@ -2,6 +2,7 @@ package vectores.coordenadas;
 
 import vectores.coordenadas.polares.PolaresARectangulares;
 import vectores.coordenadas.rectangulares.RectangularesAPolares;
+import vectores.suma.SumarVectores;
 
 import java.util.Scanner;
 
@@ -13,6 +14,7 @@ public class SubmenuCoordenadas {
             System.out.println("**** VECTORES ****");
             System.out.println("1. De Coordenadas polares a rectangulares");
             System.out.println("2. De Coordendas rectangulares a polares");
+            System.out.println("3. Suma de vectores");
             System.out.println("0. Regresar al menu principal");
             System.out.print("Elige una opcion: ");
             opcion = abi.nextInt();
@@ -23,6 +25,8 @@ public class SubmenuCoordenadas {
                 case 2:
                     RectangularesAPolares.calcular(abi);
                     break;
+                case 3:
+                    SumarVectores.sumar(abi);
             }
         } while (opcion != 0);
     }

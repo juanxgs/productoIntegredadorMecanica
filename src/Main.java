@@ -22,14 +22,11 @@ public class Main {
                     SubmenuCoordenadas.mostrarMenu(abi);
                     break;
                 case 3:
-                    SumarVectores.sumar(abi);
-                    break;
-                case 4:
                     Cinematica.mostrarMenu(abi);
                     break;
-                case 5:
+                case 4:
                     Dinamica.mostrarMenu(abi);
-                case 6:
+                case 5:
                     System.out.println("Saliendo...");
                     break;
                 default:
