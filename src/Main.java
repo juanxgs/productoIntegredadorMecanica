@@ -1,7 +1,6 @@
 import dinamica.Dinamica;
 import distancia.Distancia;
 import vectores.coordenadas.SubmenuCoordenadas;
-import vectores.suma.SumarVectores;
 import cinematica.Cinematica;
 
 import java.util.Scanner;
@@ -32,7 +31,7 @@ public class Main {
                 default:
                     System.out.println("Opcion no valida. Intente de nuevo.");
             }
-        } while (opcion != 6);
+        } while (opcion != 5);
     }
 
 }
