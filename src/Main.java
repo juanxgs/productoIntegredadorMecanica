@@ -25,6 +25,7 @@ public class Main {
                     break;
                 case 4:
                     Dinamica.mostrarMenu(abi);
+                    break;
                 case 5:
                     System.out.println("Saliendo...");
                     break;
