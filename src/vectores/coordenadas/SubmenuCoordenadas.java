@@ -27,6 +27,7 @@ public class SubmenuCoordenadas {
                     break;
                 case 3:
                     SumarVectores.sumar(abi);
+                    break;
             }
         } while (opcion != 0);
     }
