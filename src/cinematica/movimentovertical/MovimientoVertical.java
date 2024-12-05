@@ -33,6 +33,7 @@ public class MovimientoVertical {
                     break;
                 case 5:
                     TiempoVelocidadFinal.calcular(abi);
+                    break;
                 case 0:
                     System.out.println("Saliendo del programa...");
                     break;
